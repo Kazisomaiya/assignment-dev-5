@@ -16,8 +16,9 @@
             <p class="text-3xl">Dev <span class="font-bold">Board</span></p>
         </div>
         <div class="flex gap-10 items-center">
-            <div class="">
+            <div class="flex items-center gap-2 bg-blue-50 p-3 rounded-xl">
                 <img src="assets/checkbox.png" alt="">
+                <div id="task-add" class="font-bold text-2xl">24</div>
 
             </div>
             <img class="h-5/6 bg-blue-50 rounded-full p-2" src="assets/theme-btn.png" alt="">
@@ -27,12 +28,13 @@
     </header>
     <main class="grid grid-cols-4 mt-5">
         <div class="col-span-3 bg-white rounded-lg p-3">
-            <!-- first column -->
+            <!-- first row -->
             <div class="grid grid-cols-4 gap-3 border-b-2 border-dashed  border-gray-100 py-3">
                 <div class="flex gap-2 bg-blue-50 rounded-lg p-3 items-center justify-center ">
                     <img class="h-5/6 my-auto bg-white p-3 rounded-full" src="assets/checkbox.png" alt="">
                     <div class="dynamic-task">
                         <p class="text-sm">Task Assigned</p>
+                        <div id="task-minus" class="font-bold text-2xl">06</div>
                     </div>
                 </div>
                 <div class="col-span-2 bg-gradient-to-r from-blue-500 to-indigo-500 flex gap-2 rounded-lg items-center justify-center">
@@ -42,15 +44,16 @@
                 </div>
                 <div class="flex gap-2 bg-blue-50 rounded-lg justify-center">
                     <img class="h-2/3 my-auto m-1 bg-white rounded-full p-3" src="assets/calender.png" alt="">
+                    <div id="recent-time" class=""></div>
                     
                 </div>
             </div>
-            <!-- second column -->
-            <div class="grid md:grid-cols-3 gap-3">
+            <!-- second row -->
+            <div id="delegate-btn" class="grid md:grid-cols-3 gap-3">
                 <!-- first element -->
                 <div class="bg-blue-50 mt-3 p-3">
                     <button class="bg-white rounded-md p-2">ShopEase</button>
-                    <h3 class="font-bold text-2xl">Fix Mobile Button Issue</h3>
+                    <h3 id="heading1"  class="font-bold text-2xl">Fix Mobile Button Issue</h3>
                     <p class="bg-white p-3 my-2 rounded-lg text-gray-500 my-3 ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                         and ensure onClick works properly</p>
                     <div class="flex justify-between p-3 border-t-2 border-dashed border-gray-300 ">
@@ -58,29 +61,28 @@
                             <p class="text-gray-500">Deadline</p>
                             <p class="font-bold">21 March 2025</p>
                         </div>
-                        <button id="fix-btn" class="bg-blue-500 rounded-lg text-white py-2 px-3">Completed</button>
+                        <button id="fix-btn1" class="bg-blue-500 rounded-lg text-white py-2 px-3">Completed</button>
                         
                     </div>
                 </div>
                 <!-- second element -->
                 <div class="bg-blue-50 mt-3 p-3">
                     <button class="bg-white rounded-md p-2">ShopEase</button>
-                    <h3 class="font-bold text-2xl">Fix Mobile Button Issue</h3>
-                    <p class="bg-white p-3 my-2 rounded-lg text-gray-500 my-3 ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
-                        and ensure onClick works properly</p>
+                    <h3 id="heading2" class="font-bold text-2xl ">Add Dark Mode</h3>
+                    <p class="bg-white p-3 my-2 rounded-lg text-gray-500 my-3 ">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
                     <div class="flex justify-between p-3 border-t-2 border-dashed border-gray-300 ">
                         <div class="">
                             <p class="text-gray-500">Deadline</p>
                             <p class="font-bold">21 March 2025</p>
                         </div>
-                        <button id="fix-btn" class="bg-blue-500 rounded-lg text-white py-2 px-3">Completed</button>
+                        <button id="fix-btn2" class="bg-blue-500 rounded-lg text-white py-2 px-3">Completed</button>
                         
                     </div>
                 </div>
                 <!-- third element -->
                 <div class="bg-blue-50 mt-3 p-3">
                     <button class="bg-white rounded-md p-2">ShopEase</button>
-                    <h3 class="font-bold text-2xl">Fix Mobile Button Issue</h3>
+                    <h3 id="heading3" class="font-bold text-2xl">Optimize  Home page</h3>
                     <p class="bg-white p-3 my-2 rounded-lg text-gray-500 my-3 ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                         and ensure onClick works properly</p>
                     <div class="flex justify-between p-3 border-t-2 border-dashed border-gray-300 ">
@@ -88,13 +90,14 @@
                             <p class="text-gray-500">Deadline</p>
                             <p class="font-bold">21 March 2025</p>
                         </div>
-                        <button id="fix-btn" class="bg-blue-500 rounded-lg text-white py-2 px-3">Completed</button>
+                        <button id="fix-btn3" class="bg-blue-500 rounded-lg text-white py-2 px-3">Completed</button>
                         
                     </div>
                 </div>
+                <!-- 4th element -->
                 <div class="bg-blue-50 my-3 p-3">
                     <button class="bg-white rounded-md p-2">ShopEase</button>
-                    <h3 class="font-bold text-2xl">Fix Mobile Button Issue</h3>
+                    <h3 id="heading4" class="font-bold text-2xl">Add new emoji 🤲</h3>
                     <p class="bg-white p-3 my-2 rounded-lg text-gray-500 my-3 ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                         and ensure onClick works properly</p>
                     <div class="flex justify-between p-3 border-t-2 border-dashed border-gray-300 ">
@@ -102,13 +105,14 @@
                             <p class="text-gray-500">Deadline</p>
                             <p class="font-bold">21 March 2025</p>
                         </div>
-                        <button id="fix-btn" class="bg-blue-500 rounded-lg text-white py-2 px-3">Completed</button>
+                        <button id="fix-btn4" class="bg-blue-500 rounded-lg text-white py-2 px-3">Completed</button>
                         
                     </div>
                 </div>
+                <!-- 5th element -->
                 <div class="bg-blue-50 my-3 p-3">
                     <button class="bg-white rounded-md p-2">ShopEase</button>
-                    <h3 class="font-bold text-2xl">Fix Mobile Button Issue</h3>
+                    <h3 id="heading5" class="font-bold text-2xl">Integrate OpenAI API </h3>
                     <p class="bg-white p-3 my-2 rounded-lg text-gray-500 my-3 ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                         and ensure onClick works properly</p>
                     <div class="flex justify-between p-3 border-t-2 border-dashed border-gray-300 ">
@@ -116,13 +120,14 @@
                             <p class="text-gray-500">Deadline</p>
                             <p class="font-bold">21 March 2025</p>
                         </div>
-                        <button id="fix-btn" class="bg-blue-500 rounded-lg text-white py-2 px-3">Completed</button>
+                        <button id="fix-btn5" class="bg-blue-500 rounded-lg text-white py-2 px-3">Completed</button>
                         
                     </div>
                 </div>
+                <!-- 6th element -->
                 <div class="bg-blue-50 my-3 p-3">
-                    <button class="bg-white rounded-md p-2">ShopEase</button>
-                    <h3 class="font-bold text-2xl">Fix Mobile Button Issue</h3>
+                    <button id="heading6" class="bg-white rounded-md p-2">ShopEase</button>
+                    <h3 class="font-bold text-2xl">Improve Job searching </h3>
                     <p class="bg-white p-3 my-2 rounded-lg text-gray-500 my-3 ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                         and ensure onClick works properly</p>
                     <div class="flex justify-between p-3 border-t-2 border-dashed border-gray-300 ">
@@ -130,7 +135,7 @@
                             <p class="text-gray-500">Deadline</p>
                             <p class="font-bold">21 March 2025</p>
                         </div>
-                        <button id="fix-btn" class="bg-blue-500 rounded-lg text-white py-2 px-3">Completed</button>
+                        <button id="fix-btn6" class="bg-blue-500 rounded-lg text-white py-2 px-3">Completed</button>
                         
                     </div>
                 </div>
@@ -145,11 +150,11 @@
                 <p>Activity log</p>   
             </div>
             <div class="flex justify-center">
-                <button class="text-white bg-blue-500 rounded-lg py-2 px-3  my-3 ">Clear History</button>
+                <button id="clear-btn" class="text-white bg-blue-500 rounded-lg py-2 px-3  my-3 ">Clear History</button>
             </div>
             <!-- history section -->
-            <div class="border-t-2 border-dashed border-gray-300 p-2">
-                <p>dgk</p>
+            <div id="history" class="border-t-2 border-dashed border-gray-300 p-2">
+                
 
             </div>
         </div>
@@ -157,8 +162,11 @@
     </main>
 
  </section>
+ <script src="utilities.js"></script>
  
- <script src="Script/time.js"></script>
+ <script src="script.js"></script>
+ 
+
     
 </body>
 </html>
