@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>second page</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-blue-50">
+    <section class="max-w-7xl min-h-screen mx-auto p-5" >
+
+        <header class="bg-white flex justify-between p-3 rounded-lg shadow-sm">
+            <div class="flex gap-3 items-center">
+                <img class="h-2/3" src="assets/logo.png" alt="logo image">
+                <p class="text-3xl ">Dev <span class="font-bold">Board</span></p>
+            </div>
+            <button id="back-page" class="py-2 px-3 text-white rounded-lg bg-blue-500">Back to Desk</button>
+        </header> 
+        <main>
+            <h3 class="py-5 font-bold text-3xl text-center ">Blogs</h3>
+            <div class="bg-white p-3 mb-5 rounded-sm">
+                <h3 class="font-semibold text-xl pb-3 border-b-2 border-dashed border-gray-200">Question-1: What are the different ways to select an element in DOM?</h3>
+                <p class="pt-3 pr-5 text-gray-500">There are 5 ways to select element in DOM
+                    getElementById(“id name”) <br>
+                    getElementsByClassName(“class name”) <br>
+                    getElementByTagName(“specific tag”) <br>
+                    querySelectorBy(“tagName / # id /. className”) <br>
+                    querySelectorByAll(“tagName / # id /. className”)</p>
+            </div>
+            <div class="bg-white p-3 mb-5 rounded-sm">
+                <h3 class="font-semibold text-xl pb-3 border-b-2 border-dashed border-gray-200">Question-2: What is the difference among innerHTML, innerText and textContent?</h3>
+                <p class="pt-3 pr-5 text-gray-500">InnerHTML provides all text content of parent and child node along with tag (for exapmle like a chocolate box without wrapping paper) <br>textContent provides all text of parent and child node including hide element and space (for example all chocolate including space) <br>innerText gives raw text of parent and child node without space and hide text</p>
+            </div>
+            <div class="bg-white p-3 mb-5 rounded-sm">
+                <h3 class="font-semibold text-xl pb-3 border-b-2 border-dashed border-gray-200">Question-3: What is event delegation in the DOM?</h3>
+                <p class="pt-3 pr-5 text-gray-500">Event delegation means declare event listener upon common ancestor instead node that provide advantages such as saving memory, simple code, dynamic action etc.
+                    (for example ‘smoking causes cancer’ the dialogue no need to attach on individual cigeratte instead labelling on package)</p>
+            </div>
+            <div class="bg-white p-3 mb-5 rounded-sm pr-10">
+                <h3 class="font-semibold text-xl pb-3 border-b-2 border-dashed border-gray-200 ">Question-4: What is event bubbling in the DOM? </h3>
+                <p class="pt-3 pr-5 text-gray-500">Event bubbling means propagation of event signal from target to root of DOM object.(for example  government budget set for specific work but budget being shared like bubbling )</p>
+            </div>
+            <div class="bg-white p-3 mb-5 rounded-sm">
+                <h3 class="font-semibold text-xl pb-3 border-b-2 border-dashed border-gray-200">Question-5: How do you create, add and remove elements using JavaScript?</h3>
+                <p class="pt-3 pr-5 text-gray-500">Create element via
+                    document. createElement(‘tagName’) <br> Add element via appendChild method after creating an element
+                    sourceName.appendChild(‘element variable name’) <br>
+                    Remove element via removeChild method
+                    parent.removeChild (‘childPosition’)</p>
+            </div>
+        </main>   
+    </section>
+    <script src="second.js"></script>
+</body>
+</html>

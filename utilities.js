@@ -14,7 +14,4 @@ function minusInt(id){
       alert('Congrates!!!! You have completed all the current task ')
    }
 }
-function test(){
-   console.log('Bismillah')
-}
 

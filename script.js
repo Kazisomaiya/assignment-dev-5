@@ -1,6 +1,13 @@
+// connection main page to seccond page
+document.getElementById('next-page').addEventListener('click', function(){
+    window.location.href='second.html'
+})
+
 // first box
 document.getElementById('fix-btn1').addEventListener('click', function(){
-    alert('Board updated successfully')
+    alert('Board updated successfully');
+    this.style.backgroundColor = "lightGray"; 
+    this.disabled = true;
     addInt('task-add')
     minusInt('task-minus');
     const newTime = new Date();
@@ -16,7 +23,9 @@ document.getElementById('fix-btn1').addEventListener('click', function(){
 })
 // second box
 document.getElementById('fix-btn2').addEventListener('click', function(){
-    alert('Board updated successfully')
+    alert('Board updated successfully');
+    this.style.backgroundColor = "lightGray"; 
+    this.disabled = true;
     addInt('task-add')
     minusInt('task-minus');
     const newTime = new Date();
@@ -32,7 +41,9 @@ document.getElementById('fix-btn2').addEventListener('click', function(){
 })
 // third box
 document.getElementById('fix-btn3').addEventListener('click', function(){
-    alert('Board updated successfully')
+    alert('Board updated successfully');
+    this.style.backgroundColor = "lightGray"; 
+    this.disabled = true;
     addInt('task-add')
     minusInt('task-minus');
     const newTime = new Date();
@@ -48,7 +59,9 @@ document.getElementById('fix-btn3').addEventListener('click', function(){
 })
 // fourth box
 document.getElementById('fix-btn4').addEventListener('click', function(){
-    alert('Board updated successfully')
+    alert('Board updated successfully');
+    this.style.backgroundColor = "lightGray"; 
+    this.disabled = true;
     addInt('task-add')
     minusInt('task-minus');
     const newTime = new Date();
@@ -64,7 +77,9 @@ document.getElementById('fix-btn4').addEventListener('click', function(){
 })
 // 5th box
 document.getElementById('fix-btn5').addEventListener('click', function(){
-    alert('Board updated successfully')
+    alert('Board updated successfully');
+    this.style.backgroundColor = "lightGray"; 
+    this.disabled = true;
     addInt('task-add')
     minusInt('task-minus');
     const newTime = new Date();
@@ -81,6 +96,8 @@ document.getElementById('fix-btn5').addEventListener('click', function(){
 // 6th box
 document.getElementById('fix-btn6').addEventListener('click', function(){
     alert('Board updated successfully');
+    this.style.backgroundColor = "lightGray"; 
+    this.disabled = true;
     addInt('task-add');
     minusInt('task-minus');
     const newTime = new Date();
@@ -92,10 +109,12 @@ document.getElementById('fix-btn6').addEventListener('click', function(){
     p.innerText = `You have completed the task ${heading} at ${timeString}`
     const hisCollection = document.getElementById('history');
     hisCollection.appendChild(p);
+    
        
 })
 document.getElementById('clear-btn').addEventListener('click', function(){
-    
+    const clearAll = document.getElementById('history');
+    clearAll.innerText = '' ;
 })
 
 

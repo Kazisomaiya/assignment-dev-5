@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>main page</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>    
 </head>
@@ -21,7 +21,9 @@
                 <div id="task-add" class="font-bold text-2xl">24</div>
 
             </div>
-            <img class="h-5/6 bg-blue-50 rounded-full p-2" src="assets/theme-btn.png" alt="">
+          <div id="theme-btn" class="">
+            <img  class="h-5/6 bg-blue-50 rounded-full p-2" src="assets/theme-btn.png" alt="">
+          </div>
         </div>
 
 
@@ -37,14 +39,14 @@
                         <div id="task-minus" class="font-bold text-2xl">06</div>
                     </div>
                 </div>
-                <div class="col-span-2 bg-gradient-to-r from-blue-500 to-indigo-500 flex gap-2 rounded-lg items-center justify-center">
+                <div class="col-span-2 bg-gradient-to-r from-blue-500 to-blue-200 flex gap-2 rounded-lg items-center justify-center">
                     <img class="h-2/3 my-auto" src="assets/board.png" alt="">
-                    <p class="text-center">Discover Something <br>New Today!</p>
+                    <p id="next-page" class="text-center">Discover Something <br>New Today!</p>
                     
                 </div>
-                <div class="flex gap-2 bg-blue-50 rounded-lg justify-center">
+                <div id="date-update" class="flex gap-2 bg-blue-50 rounded-lg justify-center items-center font-bold">
                     <img class="h-2/3 my-auto m-1 bg-white rounded-full p-3" src="assets/calender.png" alt="">
-                    <div id="recent-time" class=""></div>
+                
                     
                 </div>
             </div>
@@ -53,7 +55,7 @@
                 <!-- first element -->
                 <div class="bg-blue-50 mt-3 p-3">
                     <button class="bg-white rounded-md p-2">ShopEase</button>
-                    <h3 id="heading1"  class="font-bold text-2xl">Fix Mobile Button Issue</h3>
+                    <h3 id="heading1"  class="font-semibold text-2xl">Fix Mobile Button Issue</h3>
                     <p class="bg-white p-3 my-2 rounded-lg text-gray-500 my-3 ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                         and ensure onClick works properly</p>
                     <div class="flex justify-between p-3 border-t-2 border-dashed border-gray-300 ">
@@ -68,7 +70,7 @@
                 <!-- second element -->
                 <div class="bg-blue-50 mt-3 p-3">
                     <button class="bg-white rounded-md p-2">ShopEase</button>
-                    <h3 id="heading2" class="font-bold text-2xl ">Add Dark Mode</h3>
+                    <h3 id="heading2" class="font-semibold text-2xl ">Add Dark Mode</h3>
                     <p class="bg-white p-3 my-2 rounded-lg text-gray-500 my-3 ">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
                     <div class="flex justify-between p-3 border-t-2 border-dashed border-gray-300 ">
                         <div class="">
@@ -82,7 +84,7 @@
                 <!-- third element -->
                 <div class="bg-blue-50 mt-3 p-3">
                     <button class="bg-white rounded-md p-2">ShopEase</button>
-                    <h3 id="heading3" class="font-bold text-2xl">Optimize  Home page</h3>
+                    <h3 id="heading3" class="font-semibold text-2xl">Optimize  Home page</h3>
                     <p class="bg-white p-3 my-2 rounded-lg text-gray-500 my-3 ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                         and ensure onClick works properly</p>
                     <div class="flex justify-between p-3 border-t-2 border-dashed border-gray-300 ">
@@ -97,7 +99,7 @@
                 <!-- 4th element -->
                 <div class="bg-blue-50 my-3 p-3">
                     <button class="bg-white rounded-md p-2">ShopEase</button>
-                    <h3 id="heading4" class="font-bold text-2xl">Add new emoji 🤲</h3>
+                    <h3 id="heading4" class="font-semibold text-2xl">Add new emoji 🤲</h3>
                     <p class="bg-white p-3 my-2 rounded-lg text-gray-500 my-3 ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                         and ensure onClick works properly</p>
                     <div class="flex justify-between p-3 border-t-2 border-dashed border-gray-300 ">
@@ -112,7 +114,7 @@
                 <!-- 5th element -->
                 <div class="bg-blue-50 my-3 p-3">
                     <button class="bg-white rounded-md p-2">ShopEase</button>
-                    <h3 id="heading5" class="font-bold text-2xl">Integrate OpenAI API </h3>
+                    <h3 id="heading5" class="font-semibold text-2xl">Integrate OpenAI API </h3>
                     <p class="bg-white p-3 my-2 rounded-lg text-gray-500 my-3 ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                         and ensure onClick works properly</p>
                     <div class="flex justify-between p-3 border-t-2 border-dashed border-gray-300 ">
@@ -127,7 +129,7 @@
                 <!-- 6th element -->
                 <div class="bg-blue-50 my-3 p-3">
                     <button id="heading6" class="bg-white rounded-md p-2">ShopEase</button>
-                    <h3 class="font-bold text-2xl">Improve Job searching </h3>
+                    <h3 class="font-semibold text-2xl">Improve Job searching </h3>
                     <p class="bg-white p-3 my-2 rounded-lg text-gray-500 my-3 ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                         and ensure onClick works properly</p>
                     <div class="flex justify-between p-3 border-t-2 border-dashed border-gray-300 ">
@@ -158,14 +160,15 @@
 
             </div>
         </div>
-
+       
     </main>
 
  </section>
+
  <script src="utilities.js"></script>
- 
  <script src="script.js"></script>
- 
+ <script src="connection.js"></script>
+ <script src="second.js"></script>
 
     
 </body>
